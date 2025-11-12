@@ -1,15 +1,21 @@
 import random
 
-senha = []
+mega = []
 cont = 0
+palpite = []
 
 
 while True:
     cont = cont + 1
-    senha.append(random.randint(0,60))
+    mega.append(random.randint(0,60))
+    palpite.append(random.randint(0,60))
     if cont == 6:
         break
 
+while True:
+    if mega == palpite:
+        break
+    print(mega)
 
-
-print(senha)
+print(mega)
+print(palpite)
